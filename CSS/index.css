@@ -1,0 +1,172 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/0c/31/54/0c31545600fc7679a00c1502cea1a3ef.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: top;
+    background-color: black;
+}
+.image-haut-gauche {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    position: fixed ;
+    right: 0;
+    left: 0;
+    top:0;
+    z-index: 9999;
+}
+
+a {
+    padding: 8px ;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.navbar ul h1 {
+    text-align: center;
+    color: white;
+}
+
+.navbar ul li a {
+    float: right;
+    font-size: 15px;
+
+}
+
+  .navigation {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    margin: 0 5px;
+    font-size: 35px;
+    position: relative;
+}
+
+.navigation a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.15em;
+    bottom: 0;
+    right: 100%;
+    background-color: burlywood;
+    z-index: -1;
+    transition: width 0.3s ease-out, right 0.3s ease-out;
+}
+
+.navigation a:hover::before {
+    width: 100%;
+    right: 0;
+}
+ #twitter img {
+  position: absolute;
+  display : block;
+ 
+  top: 10px; 
+  right: 70px; 
+  border-radius: 50%;
+  width: 2%;
+  border : 3px solid white;
+}
+.social-links {
+  text-align: right;
+}
+ .social img {
+ margin-top: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 2%;
+  border : 3px solid white;
+}
+.social img:hover {
+  transform: scale(1.2); 
+  transition: transform 0.3s ease; 
+}
+
+.THEWEEKND {
+  text-align: right;
+  color: #ffbf00;
+  margin-right: 10%;
+  margin-top: 10%;
+  font-size: 150px;
+  font-family: 'Brygada 1918', serif;
+}
+
+    /* Style pour le bouton Biographie */
+    #btnBiographie {
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #f1f1f1;
+      border: none;
+      cursor: pointer;
+      margin-left: 65%;
+      border-radius: 5px;
+  }
+  
+  /* Style pour la modal */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Style pour le contenu de la modal */
+  /* Style pour le contenu de la modal avec barre de défilement */
+  .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%;
+      text-align: center;
+      position: relative;
+      max-height: 60%; /* Hauteur maximale */
+      overflow: auto; /* Activer la barre de défilement */
+  }
+  
+  
+  /* Style pour le bouton de fermeture (croix) */
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+
+
+

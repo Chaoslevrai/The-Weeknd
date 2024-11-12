@@ -1,0 +1,181 @@
+  body{
+    background-image: url("ressources/Tour.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+  }
+
+  .image-haut-gauche {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+  }
+  .navbar{
+      height: 50px;
+      width: 100%;
+      position: fixed ;
+      right: 0;
+      left: 0;
+      top:0;
+      z-index: 9999;
+  }
+
+  a {
+      padding: 8px ;
+  }
+
+
+  ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+
+
+  .navbar ul h1 {
+      text-align: center;
+      color: white;
+  }
+
+  .navbar ul li a {
+      float: right;
+      font-size: 15px;
+
+  }
+
+    .navigation {
+      display: flex;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99999;
+  }
+
+  .navigation a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      margin: 0 5px;
+      font-size: 35px;
+      position: relative;
+  }
+
+  .navigation a::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0.15em;
+      bottom: 0;
+      right: 100%;
+      background-color: burlywood;
+      z-index: -1;
+      transition: width 0.3s ease-out, right 0.3s ease-out;
+  }
+
+  .navigation a:hover::before {
+      width: 100%;
+      right: 0;
+  }
+  #twitter img {
+    position: absolute;
+    display : block;
+  
+    top: 10px; 
+    right: 70px; 
+    border-radius: 50%;
+    width: 2%;
+    border : 3px solid white;
+  }
+  .social-links {
+    text-align: right;
+  }
+  .social img {
+  margin-top: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 2%;
+    border : 3px solid white;
+  }
+  .social img:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+  }
+
+  .layout {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-top: 6%;
+  }
+
+  .premierblock {
+    background-image: url("ressources/starboy.jpeg");
+    background-image: s;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .deuxiemeblock {
+    background-image: url("ressources/kissland.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .troisiemeblock {
+    background-image: url("ressources/AfterHours.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .quatriemeblock  {
+    background-image: url("ressources/trillogy.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20%;
+  
+  }
+
+  p {
+    text-align: center;
+    padding-top: 100%;
+    color: white;
+    width: 300px;
+    overflow-wrap: break-word;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .TITREUN {
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    font-family: 'Unica One', sans-serif; 
+  }
+
+  .TITREDEUX {
+    text-align: center;
+    color: lightgreen ;
+    font-size: 26px;  
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .TITRETROIS {
+    text-align: center;
+    color: red ;
+    font-size: 31px;
+    font-family: 'Josefin Slab', serif;
+    
+  }
+
+  .TITREQUATRE {
+    text-align: center;
+    color: white ;
+    font-size: 26px;
+  }

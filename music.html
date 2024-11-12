@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/musics.css">
+        <title>Musics   </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a href="index.html"> <img src="CSS/ressources/theweekend-modified.png" alt="Votre image" class="image-haut-gauche"></a>
+        <nav class="navbar">
+            
+            <article class="navigation">
+                <a href="index.html">Home</a>
+                <a href="biographie.html">Biographie</a>
+                <a href="music.html">Musics</a>
+                <a href="discographie.html">Discographie</a>
+                
+            </article> 
+
+            <div class="social-links">
+                <span class="social">
+                    <a href="https://twitter.com/theweeknd" >
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Twitter-new-logo.jpg" alt="TWITTER">
+                    </a>
+                </span>
+                <span class="social">
+                    <a href="https://www.instagram.com/theweeknd/?hl=fr" >
+                        <img src="CSS/ressources/icone-instagram-logo-insigne-moderne_578229-124.png" alt="Instagram">
+                    </a>
+                </span>
+            </div>
+    </nav> 
+
+
+    <div class="slide-container">
+        <div class="custom-slider fade">
+            <div class="slide-index">1 / 6</div>
+            <a href="https://www.youtube.com/playlist?list=PLWGXKDxW301QZrzSl7hLzdYakFdayHC4l">
+                <img class="slide-img" src="CSS/ressources/starboy.jpeg" alt="#" >
+            </a>
+            <div class="slide-text">STAR BOY </div>           
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">2 / 6</div>
+            <a href="https://www.youtube.com/playlist?list=PLWGXKDxW301QZrzSl7hLzdYakFdayHC4l">
+            <img class="slide-img" src="CSS/ressources/party monster.jpeg" alt="JJK">
+            </a> 
+            <div class="slide-text">Party monster</div>         
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">3 / 6</div>
+            <a href="https://www.youtube.com/playlist?list=PLPRWtKgY2MOu8dPE7sMxQZ07PS1mLqid9">
+                <img class="slide-img" src="CSS/ressources/AfterHours.jpeg" alt="Dr Stone">
+            </a>
+            <div class="slide-text">AFTER HOURS </div>
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">4 / 6</div>
+            <a href="https://www.youtube.com/playlist?list=PLtdokPm7vPss1TXrV4gr2pnSXmMu-UFF4">
+            <img class="slide-img" src="CSS/ressources/Dawn FM.jpeg" alt="#">
+            </a>
+            <div class="slide-text">DAWN FM </div>
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">5 / 6</div>
+            <a href="https://www.youtube.com/playlist?list=PLJJaZUDfc5LWYyV0T5i99Ef45UxVf8bcr">
+            <img class="slide-img" src="CSS/ressources/kisslands.jpeg" alt="#">
+            </a>
+            <div class="slide-text">Kissland</div>
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">6 / 6</div>
+            <a href="https://www.youtube.com/playlist?list=PLtyN1XIs_HjdmDU6Vldc0HthCm6zZp1b4">
+            <img class="slide-img" src="CSS/ressources/HouseOFBalloons.jpeg" alt="#">
+            </a>
+            <div class="slide-text">HouseOFBalloons </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <div class="overlay" onclick="fermerImage()">
+        <img id="image-overlay" src="" alt="Image en grand">
+    </div>
+
+    <div class="videos-container">
+        <div class="video-wrapper" onmouseover="playVideo(this)">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4F7A0DXBrmUAkp32uenhZt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="video-wrapper" onmouseover="playVideo(this)">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3KyKxJ4P3pVCgaZwaq2rUC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="videos-container">
+        <div class="video-wrapper" onmouseover="playVideo(this)">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2dHHgzDwk4BJdRwy9uXhTO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="video-wrapper" onmouseover="playVideo(this)">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7CyPwkp0oE8Ro9Dd5CUDjW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="videos-container">
+        <div class="video-wrapper" onmouseover="playVideo(this)">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="video-wrapper" onmouseover="playVideo(this)">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0mL82sxCRjrs3br407IdJh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    </div>
+    <script src="js/test1.js"></script>
+
+
+
+    </body>
+    </html>
